@@ -1,0 +1,23 @@
+@import './var.scss';
+
+// Picker
+$picker-toolbar-height: 48px;
+$picker-confirm-action-color: $text-link-color;
+$picker-cancel-action-color:  $black;
+$picker-action-padding: 0 20px;
+$picker-action-font-size: 16px;
+
+// Search
+$search-padding: 6px 20px;
+$search-content-background-color: #F1F2F5;
+$search-content-border-color: #DCDEE7;
+
+// SearchablePicker
+$searchable-picker-content-padding: 0 0 0 20px;
+$searchable-picker-item-font-size: 14px;
+$searchable-picker-item-line-height: 48px;
+$searchable-picker-item-padding: 0 20px 0 0;
+$searchable-picker-item-active-color: transparent;
+$searchable-picker-item-border-color: $border-color;
+$searchable-picker-item-selected-color: $text-link-color;
+$searchable-picker-msg-color: #999;

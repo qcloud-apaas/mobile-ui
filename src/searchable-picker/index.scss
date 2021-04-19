@@ -1,0 +1,15 @@
+@import '../styles/var.scss';
+@import '../styles/mixins/hairline.scss';
+
+.pant-searchable-picker {
+  .pant-popup-toolbar {
+    position: relative;
+    &::after {
+      @include hairline-bottom();
+    }
+  }
+  .checked-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
