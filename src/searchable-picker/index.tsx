@@ -13,7 +13,17 @@ export class UISearchablePicker extends React.PureComponent<SearchablePickerProp
     uncheckedNode: '',
   };
 
+  comRef = React.createRef<SearchablePicker>();
+
+  getValue(): string | string[] {
+    return this.comRef.current.getValue();
+  }
+
+  clearValue(cb: () => void): void {
+    return this.comRef.current.clearValue(cb);
+  }
+
   render(): JSX.Element {
-    return <SearchablePicker {...this.props} />;
+    return <SearchablePicker ref={this.comRef} {...this.props} />;
   }
 }

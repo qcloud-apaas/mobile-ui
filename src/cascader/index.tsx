@@ -12,7 +12,17 @@ export class UICascader extends React.PureComponent<CascaderProps> {
     uncheckedNode: '',
   };
 
+  comRef = React.createRef<Cascader>();
+
+  getValue(): string[] | string[][] {
+    return this.comRef.current.getValue();
+  }
+
+  clearValue(cb: () => void): void {
+    return this.comRef.current.clearValue(cb);
+  }
+
   render(): JSX.Element {
-    return <Cascader {...this.props} />;
+    return <Cascader ref={this.comRef} {...this.props} />;
   }
 }

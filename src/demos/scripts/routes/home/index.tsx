@@ -45,6 +45,13 @@ export class HomeRouteComponent extends React.Component {
             SearchablePicker <Arrow />
           </Link>
         </section>
+
+        <section>
+          <h3>Display Components</h3>
+          <Link to="/data-list/">
+            DataList <Arrow />
+          </Link>
+        </section>
       </div>
     );
   }

@@ -215,6 +215,7 @@ export class DataListRouteComponent extends React.PureComponent {
       value: this.state.filterValue,
       onChange: (value) => {
         this.setState({ filterValue: value });
+        toast({ message: JSON.stringify(value, null, 2), textAlign: 'left', duration: 10000, clearOnClick: true });
       },
     });
 

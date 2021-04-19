@@ -1,5 +1,5 @@
 import { DataListAddon } from '../../pant-react/es/data-list';
-import { filterable, FilterableOptions } from '../../pant-react/es/data-list/addons/filterable';
+import { filterable, FilterableOptions } from '../../pant-react/es/data-list/addons';
 import { UICascader } from '../cascader';
 import { UIDatetimePicker, UIDatetimeRange } from '../datetime-picker';
 import { UISearchablePicker } from '../searchable-picker';
@@ -19,7 +19,7 @@ export * from '../../pant-react/es/data-list/addons/sortable';
 export * from '../../pant-react/es/data-list/addons/toolbar';
 
 export function filterable2(options: FilterableOptions): DataListAddon {
-  options.columns = options.columns.map((column) => {
+  const columns = options.columns.map((column) => {
     if (column.component) {
       return column;
     }
@@ -36,5 +36,5 @@ export function filterable2(options: FilterableOptions): DataListAddon {
     }
     return { ...column, component: CustomComponent };
   });
-  return filterable(options);
+  return filterable({ ...options, columns });
 }
