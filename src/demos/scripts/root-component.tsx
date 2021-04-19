@@ -5,6 +5,9 @@ import { closeAllDialogs } from 'pant-react/es/dialog';
 import { clearAllNotifies } from 'pant-react/es/notify';
 import { clearAllToasts } from 'pant-react/es/toast';
 import { HomeRouteComponent } from './routes/home';
+import { CascaderRouteComponent } from '../../cascader/demo';
+import { DataListRouteComponent } from '../../data-list/demo';
+import { DatetimePickerRouteComponent } from '../../datetime-picker/demo';
 import { SearchablePickerRouteComponent } from '../../searchable-picker/demo';
 import { NotFoundRouteComponent } from './routes/404';
 
@@ -38,6 +41,15 @@ export class RootComponent extends React.Component {
     return (
       <Router>
         <Switch>
+          <Route path="/cascader/">
+            <CascaderRouteComponent />
+          </Route>
+          <Route path="/data-list/">
+            <DataListRouteComponent />
+          </Route>
+          <Route path="/datetime-picker/">
+            <DatetimePickerRouteComponent />
+          </Route>
           <Route path="/searchable-picker/">
             <SearchablePickerRouteComponent />
           </Route>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBEM } from '../../../../utils/bem';
+import { createBEM } from '../../../../../pant-react/es/utils/bem';
 import './index.scss';
 
 const bem = createBEM('demo-404');

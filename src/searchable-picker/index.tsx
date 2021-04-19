@@ -1,12 +1,12 @@
 import React from 'react';
-import { SearchablePicker as PantSearchablePicker, SearchablePickerProps } from '../../pant-react/es/searchable-picker';
-import checkedIcon from './selected.svg';
+import { SearchablePicker, SearchablePickerProps } from '../../pant-react/es/searchable-picker';
+import checkedIcon from '../assets/checked.svg';
 
-export { SearchablePickerProps };
+export * from '../../pant-react/es/searchable-picker';
 
 import './index.scss';
 
-export class SearchablePicker extends React.PureComponent<SearchablePickerProps> {
+export class UISearchablePicker extends React.PureComponent<SearchablePickerProps> {
   static defaultProps = {
     rowHeight: 48,
     checkedNode: <img src={checkedIcon} style={{ width: '16px', height: '16px' }} />,
@@ -14,6 +14,6 @@ export class SearchablePicker extends React.PureComponent<SearchablePickerProps>
   };
 
   render(): JSX.Element {
-    return <PantSearchablePicker {...this.props} />;
+    return <SearchablePicker {...this.props} />;
   }
 }

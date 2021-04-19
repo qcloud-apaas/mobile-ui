@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { createBEM } from '../../../../utils/bem';
+import { createBEM } from '../../../../../pant-react/es/utils/bem';
 import githubLogo from '../../../assets/github.svg';
 import './index.scss';
 
@@ -35,6 +35,12 @@ export class HomeRouteComponent extends React.Component {
 
         <section>
           <h3>Form Components</h3>
+          <Link to="/cascader/">
+            Cascader <Arrow />
+          </Link>
+          <Link to="/datetime-picker/">
+            DatetimePicker <Arrow />
+          </Link>
           <Link to="/searchable-picker/">
             SearchablePicker <Arrow />
           </Link>

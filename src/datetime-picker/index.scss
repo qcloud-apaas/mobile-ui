@@ -1,0 +1,10 @@
+@import '../styles/var.scss';
+@import '../styles/mixins/hairline.scss';
+
+.pant-datetime-picker {
+  .pant-picker__toolbar {
+    &::after {
+      @include hairline-bottom();
+    }
+  }
+}

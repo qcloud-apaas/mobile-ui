@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router-dom';
-import { createBEM } from '../../../../utils/bem';
+import { createBEM } from '../../../../../pant-react/es/utils/bem';
 import githubLogo from '../../../assets/github.svg';
 import './index.scss';
 
