@@ -1,3 +1,3 @@
-# SearchablePicker
+# DatetimePicker
 
 Coming soon...
