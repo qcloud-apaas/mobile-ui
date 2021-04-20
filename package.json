@@ -21,8 +21,8 @@
   "module": "es/index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --passWithNoTests --coverage",
     "build:lib": "tsc -d -m commonjs --outDir lib --sourceMap false --inlineSources false",
     "build:es": "tsc -d -m esNext --outDir es --sourceMap false --inlineSources false",
     "build:clean": "rm -rf lib/demos/ es/demos/ lib/*/demo/ es/*/demo/",
