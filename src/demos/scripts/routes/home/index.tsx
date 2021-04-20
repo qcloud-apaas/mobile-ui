@@ -34,12 +34,22 @@ export class HomeRouteComponent extends React.Component {
         <h2>Tencent Cloud aPaaS Mobile UI Components</h2>
 
         <section>
+          <h3>Basic Components</h3>
+          <Link to="/popup/">
+            Popup <Arrow />
+          </Link>
+        </section>
+
+        <section>
           <h3>Form Components</h3>
           <Link to="/cascader/">
             Cascader <Arrow />
           </Link>
           <Link to="/datetime-picker/">
             DatetimePicker <Arrow />
+          </Link>
+          <Link to="/field/">
+            Field <Arrow />
           </Link>
           <Link to="/searchable-picker/">
             SearchablePicker <Arrow />

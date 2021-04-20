@@ -1,0 +1,235 @@
+import React from 'react';
+import { UIPopup } from '../../popup';
+import { CellGroup } from '../../../pant-react/es/cell-group';
+import { Cell } from '../../../pant-react/es/cell';
+import { createBEM } from '../../../pant-react/es/utils/bem';
+import { NavBar } from '../../demos/scripts/components/nav-bar';
+import './index.scss';
+
+const bem = createBEM('demo-popup');
+
+type PopupRouteComponentState = {
+  show1: boolean;
+  show2: boolean;
+  show3: boolean;
+  show4: boolean;
+  show5: boolean;
+  show6: boolean;
+  show7: boolean;
+  show8: boolean;
+  show9: boolean;
+  show10: boolean;
+};
+
+export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComponentState> {
+  state: PopupRouteComponentState = {
+    show1: false,
+    show2: false,
+    show3: false,
+    show4: false,
+    show5: false,
+    show6: false,
+    show7: false,
+    show8: false,
+    show9: false,
+    show10: false,
+  };
+
+  render(): JSX.Element {
+    return (
+      <React.Fragment>
+        <NavBar title="Popup" type="popup" />
+        <div className={bem()}>
+          <section>
+            <h2>Basic Usage</h2>
+            <CellGroup border>
+              <Cell
+                title="Show Popup"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show1: true });
+                }}
+              ></Cell>
+            </CellGroup>
+            <UIPopup
+              show={this.state.show1}
+              style={{ padding: '30px 50px' }}
+              onClickClose={(): void => {
+                this.setState({ show1: false });
+              }}
+            >
+              <>Content</>
+            </UIPopup>
+          </section>
+
+          <section>
+            <h2>Position</h2>
+            <CellGroup border>
+              <Cell
+                title="From Top"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show2: true });
+                }}
+              ></Cell>
+              <Cell
+                title="From Bottom"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show3: true });
+                }}
+              ></Cell>
+              <Cell
+                title="From Left"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show4: true });
+                }}
+              ></Cell>
+              <Cell
+                title="From Right"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show5: true });
+                }}
+              ></Cell>
+            </CellGroup>
+            <UIPopup
+              show={this.state.show2}
+              position="top"
+              style={{ height: '30%' }}
+              onClickClose={(): void => {
+                this.setState({ show2: false });
+              }}
+            ></UIPopup>
+            <UIPopup
+              show={this.state.show3}
+              position="bottom"
+              style={{ height: '30%' }}
+              onClickClose={(): void => {
+                this.setState({ show3: false });
+              }}
+            ></UIPopup>
+            <UIPopup
+              show={this.state.show4}
+              position="left"
+              style={{ width: '30%', height: '100%' }}
+              onClickClose={(): void => {
+                this.setState({ show4: false });
+              }}
+            ></UIPopup>
+            <UIPopup
+              show={this.state.show5}
+              position="right"
+              style={{ width: '30%', height: '100%' }}
+              onClickClose={(): void => {
+                this.setState({ show5: false });
+              }}
+            ></UIPopup>
+          </section>
+
+          <section>
+            <h2>Close Icon</h2>
+            <CellGroup border>
+              <Cell
+                title="Close Icon"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show6: true });
+                }}
+              ></Cell>
+              <Cell
+                title="Custom Icon"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show7: true });
+                }}
+              ></Cell>
+              <Cell
+                title="Icon Position"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show8: true });
+                }}
+              ></Cell>
+            </CellGroup>
+            <UIPopup
+              show={this.state.show6}
+              position="bottom"
+              style={{ height: '30%' }}
+              closeable
+              onClickClose={(): void => {
+                this.setState({ show6: false });
+              }}
+            ></UIPopup>
+            <UIPopup
+              show={this.state.show7}
+              position="bottom"
+              style={{ height: '30%' }}
+              closeable
+              closeIcon="close"
+              onClickClose={(): void => {
+                this.setState({ show7: false });
+              }}
+            ></UIPopup>
+            <UIPopup
+              show={this.state.show8}
+              position="bottom"
+              style={{ height: '30%' }}
+              closeable
+              closeIconPosition="top-left"
+              onClickClose={(): void => {
+                this.setState({ show8: false });
+              }}
+            ></UIPopup>
+          </section>
+
+          <section>
+            <h2>Round Corner</h2>
+            <CellGroup border>
+              <Cell
+                title="Round Corner"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show9: true });
+                }}
+              ></Cell>
+            </CellGroup>
+            <UIPopup
+              show={this.state.show9}
+              position="bottom"
+              style={{ height: '30%' }}
+              round
+              onClickClose={(): void => {
+                this.setState({ show9: false });
+              }}
+            ></UIPopup>
+          </section>
+
+          <section>
+            <h2>Fade Leave</h2>
+            <CellGroup border>
+              <Cell
+                title="Fade Leave"
+                rightIcon="arrow"
+                onClick={(): void => {
+                  this.setState({ show10: true });
+                }}
+              ></Cell>
+            </CellGroup>
+            <UIPopup
+              show={this.state.show10}
+              position="bottom"
+              style={{ height: '30%' }}
+              fadeLeave
+              round
+              onClickClose={(): void => {
+                this.setState({ show10: false });
+              }}
+            ></UIPopup>
+          </section>
+        </div>
+      </React.Fragment>
+    );
+  }
+}

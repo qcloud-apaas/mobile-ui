@@ -8,6 +8,8 @@ import { HomeRouteComponent } from './routes/home';
 import { CascaderRouteComponent } from '../../cascader/demo';
 import { DataListRouteComponent } from '../../data-list/demo';
 import { DatetimePickerRouteComponent } from '../../datetime-picker/demo';
+import { FieldRouteComponent } from '../../field/demo';
+import { PopupRouteComponent } from '../../popup/demo';
 import { SearchablePickerRouteComponent } from '../../searchable-picker/demo';
 import { NotFoundRouteComponent } from './routes/404';
 
@@ -49,6 +51,12 @@ export class RootComponent extends React.Component {
           </Route>
           <Route path="/datetime-picker/">
             <DatetimePickerRouteComponent />
+          </Route>
+          <Route path="/field/">
+            <FieldRouteComponent />
+          </Route>
+          <Route path="/popup/">
+            <PopupRouteComponent />
           </Route>
           <Route path="/searchable-picker/">
             <SearchablePickerRouteComponent />

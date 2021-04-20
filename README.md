@@ -31,9 +31,12 @@ import { Button } from '@qcloud-apaas/mobile-ui/es/button';
 
 ### Components
 
+- Basic Components
+  - [Popup](https://webyom.github.io/pant-react/#/components/popup)
 - Form Components
   - [Cascader](https://webyom.github.io/pant-react/#/components/cascader)
   - [DatetimePicker](https://webyom.github.io/pant-react/#/components/datetime-picker)
+  - [Field](https://webyom.github.io/pant-react/#/components/field)
   - [SearchablePicker](https://webyom.github.io/pant-react/#/components/searchable-picker)
 - Display Components
   - [DataList](https://webyom.github.io/pant-react/#/components/data-list)

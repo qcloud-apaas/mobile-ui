@@ -1,5 +1,13 @@
 @import './var.scss';
 
+// Cell
+$cell-text-color: #333;
+
+// Field
+$field-error-message-color: #E54545;
+$field-input-error-text-color: #E54545;
+$field-input-disabled-text-color: #999;
+
 // Picker
 $picker-toolbar-height: 48px;
 $picker-confirm-action-color: $text-link-color;

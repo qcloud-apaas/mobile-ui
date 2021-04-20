@@ -1,0 +1,16 @@
+@import '../styles/var.scss';
+
+.pant-field {
+  &.pant-cell--required {
+    &::before {
+      display: none;
+    }
+    .pant-field__title {
+      &::after {
+        content: '*';
+        color: #FF584C;
+        margin-left: 2px;
+      }
+    }
+  }
+}

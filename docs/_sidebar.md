@@ -1,8 +1,11 @@
 <!-- docs/_sidebar.md -->
 - [Introduction](/)
+- Basic Components
+  - [Popup](components/popup.md)
 - Form Components
   - [Cascader](components/cascader.md)
   - [DatetimePicker](components/datetime-picker.md)
+  - [Field](components/field.md)
   - [SearchablePicker](components/searchable-picker.md)
 - Display Components
   - [DataList](components/data-list.md)
