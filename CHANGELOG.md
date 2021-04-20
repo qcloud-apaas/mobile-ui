@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.3...v0.1.4) (2021-04-20)
+
+
+### Bug Fixes
+
+* test ([a1fec6c](https://github.com/qcloud-apaas/mobile-ui/commit/a1fec6c964ed17f72c970da686de1ef36fbfc097))
+
 ### [0.1.3](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.2...v0.1.3) (2021-04-20)
 
 
