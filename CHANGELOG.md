@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.2...v0.1.3) (2021-04-20)
+
+
+### Bug Fixes
+
+* stylelint ([287418a](https://github.com/qcloud-apaas/mobile-ui/commit/287418a1a727a8297d2d2546e98b0736ee3cf8cf))
+
 ### [0.1.2](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.1...v0.1.2) (2021-04-20)
 
 
