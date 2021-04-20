@@ -36,7 +36,8 @@
     "stylelint": "stylelint src/**/*.scss",
     "stylelint:fix": "stylelint src/**/*.scss --fix",
     "release": "standard-version",
-    "pant": "rm -rf pant-react && mkdir pant-react && cp -R ../../webyom/pant-react/es/ ./pant-react/es/ && echo \"\n@import '../../../src/styles/pant-react-var.scss';\" >> ./pant-react/es/styles/var.scss"
+    "pant:local": "rm -rf pant-react && mkdir pant-react && cp -R ../../webyom/pant-react/es/ ./pant-react/es/ && echo \"\n@import '../../../src/styles/pant-react-var.scss';\" >> ./pant-react/es/styles/var.scss",
+    "pant": "rm -rf pant-react && mkdir pant-react && cp -R ./node_modules/pant-react/es/ ./pant-react/es/ && echo \"\n@import '../../../src/styles/pant-react-var.scss';\" >> ./pant-react/es/styles/var.scss"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -109,6 +110,6 @@
   "dependencies": {
     "closest": "0.0.1",
     "clsx": "^1.1.0",
-    "pant-react": "^0.1.4"
+    "pant-react": "^0.1.5"
   }
 }

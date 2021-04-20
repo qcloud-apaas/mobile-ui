@@ -25,6 +25,7 @@ jobs:
       with:
         node-version: 12
     - run: npm ci
+    - run: npm run pant
     - run: npm run build
     - run: npm run eslint
     - run: npm run stylelint
