@@ -3,7 +3,7 @@
 ### Import
 
 ```js
-import { UIDataList } from '@qcloud-apaas/mobile-ui/es/data-list';
+import { MuiDataList } from '@qcloud-apaas/mobile-ui/es/data-list';
 ```
 
 ## Usage
@@ -11,7 +11,7 @@ import { UIDataList } from '@qcloud-apaas/mobile-ui/es/data-list';
 ### Basic Usage
 
 ```jsx
-<UIDataList columns={columns} records={records} />
+<MuiDataList columns={columns} records={records} />
 ```
 
 ### Use Addons
@@ -29,7 +29,7 @@ import {
 ```
 
 ```jsx
-<UIDataList
+<MuiDataList
   columns={columns}
   records={records}
   addons={[
@@ -52,7 +52,7 @@ const containerRef = useRef();
 
 ```jsx
 <div ref={containerRef}>
-  <UIDataList
+  <MuiDataList
     columns={columns}
     records={records}
     addons={[
