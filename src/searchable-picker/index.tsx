@@ -6,7 +6,7 @@ export * from '../../pant-react/es/searchable-picker';
 
 import './index.scss';
 
-export class UISearchablePicker extends React.PureComponent<SearchablePickerProps> {
+export class MuiSearchablePicker extends React.PureComponent<SearchablePickerProps> {
   static defaultProps = {
     rowHeight: 48,
     checkedNode: <img src={checkedIcon} style={{ width: '16px', height: '16px' }} />,

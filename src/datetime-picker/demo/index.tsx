@@ -1,6 +1,6 @@
 import React from 'react';
 import { Popup } from '../../../pant-react/es/popup';
-import { UIDatetimePicker, UIDatetimeRange } from '../../datetime-picker';
+import { MuiDatetimePicker, MuiDatetimeRange } from '../../datetime-picker';
 import { createBEM } from '../../../pant-react/es/utils/bem';
 import { NavBar } from '../../demos/scripts/components/nav-bar';
 import './index.scss';
@@ -49,35 +49,35 @@ export class DatetimePickerRouteComponent extends React.PureComponent<any, Datet
           <section>
             <h2>Choose Date</h2>
             <div className={bem('card')}>
-              <UIDatetimePicker type="date" title="Choose Date" defaultValue={new Date()} />
+              <MuiDatetimePicker type="date" title="Choose Date" defaultValue={new Date()} />
             </div>
           </section>
 
           <section>
             <h2>Choose Time</h2>
             <div className={bem('card')}>
-              <UIDatetimePicker type="time" title="Choose Time" defaultValue={new Date()} />
+              <MuiDatetimePicker type="time" title="Choose Time" defaultValue={new Date()} />
             </div>
           </section>
 
           <section>
             <h2>With Seconds</h2>
             <div className={bem('card')}>
-              <UIDatetimePicker type="time" title="With Seconds" defaultValue={new Date()} seconds />
+              <MuiDatetimePicker type="time" title="With Seconds" defaultValue={new Date()} seconds />
             </div>
           </section>
 
           <section>
             <h2>Choose DateTime</h2>
             <div className={bem('card')}>
-              <UIDatetimePicker type="datetime" title="Choose DateTime" defaultValue={new Date()} seconds />
+              <MuiDatetimePicker type="datetime" title="Choose DateTime" defaultValue={new Date()} seconds />
             </div>
           </section>
 
           <section>
             <h2>Formatter</h2>
             <div className={bem('card')}>
-              <UIDatetimePicker
+              <MuiDatetimePicker
                 type="datetime"
                 title="Formatter"
                 prefixZero={false}
@@ -105,7 +105,7 @@ export class DatetimePickerRouteComponent extends React.PureComponent<any, Datet
               position="bottom"
               onClickClose={() => this.setState({ showPopup: false })}
             >
-              <UIDatetimePicker
+              <MuiDatetimePicker
                 type="date"
                 defaultValue={this.state.dateValue}
                 onCancel={() => this.setState({ showPopup: false })}
@@ -123,7 +123,7 @@ export class DatetimePickerRouteComponent extends React.PureComponent<any, Datet
                   this.state.rangeValue[0].toLocaleString() + ' ~ ' + this.state.rangeValue[1].toLocaleString()}
               </span>
             </div>
-            <UIDatetimeRange
+            <MuiDatetimeRange
               show={this.state.showRange}
               type="datetime"
               defaultValue={this.state.rangeValue}

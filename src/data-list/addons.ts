@@ -1,8 +1,8 @@
 import { DataListAddon } from '../../pant-react/es/data-list';
 import { filterable, FilterableOptions } from '../../pant-react/es/data-list/addons';
-import { UICascader } from '../cascader';
-import { UIDatetimePicker, UIDatetimeRange } from '../datetime-picker';
-import { UISearchablePicker } from '../searchable-picker';
+import { MuiCascader } from '../cascader';
+import { MuiDatetimePicker, MuiDatetimeRange } from '../datetime-picker';
+import { MuiSearchablePicker } from '../searchable-picker';
 
 export * from '../../pant-react/es/data-list/addons/batch-actions';
 
@@ -26,13 +26,13 @@ export function filterable2(options: FilterableOptions): DataListAddon {
     let CustomComponent: any;
     const { type } = column;
     if (type === 'cascader') {
-      CustomComponent = UICascader;
+      CustomComponent = MuiCascader;
     } else if (type === 'datetime') {
-      CustomComponent = UIDatetimePicker;
+      CustomComponent = MuiDatetimePicker;
     } else if (type === 'datetime-range') {
-      CustomComponent = UIDatetimeRange;
+      CustomComponent = MuiDatetimeRange;
     } else if (type === 'searchable-picker') {
-      CustomComponent = UISearchablePicker;
+      CustomComponent = MuiSearchablePicker;
     }
     return { ...column, component: CustomComponent };
   });

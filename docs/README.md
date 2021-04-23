@@ -26,5 +26,5 @@ import '@qcloud-apaas/mobile-ui/es/styles/base.scss';
 ### Import component on demand
 
 ```js
-import { Popup } from '@qcloud-apaas/mobile-ui/es/popup';
+import { MuiPopup } from '@qcloud-apaas/mobile-ui/es/popup';
 ```

@@ -7,7 +7,7 @@ export * from './addons';
 
 import './index.scss';
 
-export class UIDataList<T = Record<string, any>> extends React.PureComponent<DataListProps<T>> {
+export class MuiDataList<T = Record<string, any>> extends React.PureComponent<DataListProps<T>> {
   render(): JSX.Element {
     return <DataList<T> {...this.props} />;
   }

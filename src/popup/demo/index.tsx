@@ -1,5 +1,5 @@
 import React from 'react';
-import { UIPopup } from '../../popup';
+import { MuiPopup } from '../../popup';
 import { CellGroup } from '../../../pant-react/es/cell-group';
 import { Cell } from '../../../pant-react/es/cell';
 import { createBEM } from '../../../pant-react/es/utils/bem';
@@ -51,7 +51,7 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
                 }}
               ></Cell>
             </CellGroup>
-            <UIPopup
+            <MuiPopup
               show={this.state.show1}
               style={{ padding: '30px 50px' }}
               onClickClose={(): void => {
@@ -59,7 +59,7 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
               }}
             >
               <>Content</>
-            </UIPopup>
+            </MuiPopup>
           </section>
 
           <section>
@@ -94,38 +94,38 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
                 }}
               ></Cell>
             </CellGroup>
-            <UIPopup
+            <MuiPopup
               show={this.state.show2}
               position="top"
               style={{ height: '30%' }}
               onClickClose={(): void => {
                 this.setState({ show2: false });
               }}
-            ></UIPopup>
-            <UIPopup
+            ></MuiPopup>
+            <MuiPopup
               show={this.state.show3}
               position="bottom"
               style={{ height: '30%' }}
               onClickClose={(): void => {
                 this.setState({ show3: false });
               }}
-            ></UIPopup>
-            <UIPopup
+            ></MuiPopup>
+            <MuiPopup
               show={this.state.show4}
               position="left"
               style={{ width: '30%', height: '100%' }}
               onClickClose={(): void => {
                 this.setState({ show4: false });
               }}
-            ></UIPopup>
-            <UIPopup
+            ></MuiPopup>
+            <MuiPopup
               show={this.state.show5}
               position="right"
               style={{ width: '30%', height: '100%' }}
               onClickClose={(): void => {
                 this.setState({ show5: false });
               }}
-            ></UIPopup>
+            ></MuiPopup>
           </section>
 
           <section>
@@ -153,7 +153,7 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
                 }}
               ></Cell>
             </CellGroup>
-            <UIPopup
+            <MuiPopup
               show={this.state.show6}
               position="bottom"
               style={{ height: '30%' }}
@@ -161,8 +161,8 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
               onClickClose={(): void => {
                 this.setState({ show6: false });
               }}
-            ></UIPopup>
-            <UIPopup
+            ></MuiPopup>
+            <MuiPopup
               show={this.state.show7}
               position="bottom"
               style={{ height: '30%' }}
@@ -171,8 +171,8 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
               onClickClose={(): void => {
                 this.setState({ show7: false });
               }}
-            ></UIPopup>
-            <UIPopup
+            ></MuiPopup>
+            <MuiPopup
               show={this.state.show8}
               position="bottom"
               style={{ height: '30%' }}
@@ -181,7 +181,7 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
               onClickClose={(): void => {
                 this.setState({ show8: false });
               }}
-            ></UIPopup>
+            ></MuiPopup>
           </section>
 
           <section>
@@ -195,7 +195,7 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
                 }}
               ></Cell>
             </CellGroup>
-            <UIPopup
+            <MuiPopup
               show={this.state.show9}
               position="bottom"
               style={{ height: '30%' }}
@@ -203,7 +203,7 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
               onClickClose={(): void => {
                 this.setState({ show9: false });
               }}
-            ></UIPopup>
+            ></MuiPopup>
           </section>
 
           <section>
@@ -217,7 +217,7 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
                 }}
               ></Cell>
             </CellGroup>
-            <UIPopup
+            <MuiPopup
               show={this.state.show10}
               position="bottom"
               style={{ height: '30%' }}
@@ -226,7 +226,7 @@ export class PopupRouteComponent extends React.PureComponent<any, PopupRouteComp
               onClickClose={(): void => {
                 this.setState({ show10: false });
               }}
-            ></UIPopup>
+            ></MuiPopup>
           </section>
         </div>
       </React.Fragment>

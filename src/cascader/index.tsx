@@ -6,7 +6,7 @@ export * from '../../pant-react/es/cascader';
 
 import './index.scss';
 
-export class UICascader extends React.PureComponent<CascaderProps> {
+export class MuiCascader extends React.PureComponent<CascaderProps> {
   static defaultProps = {
     checkedNode: <img src={checkedIcon} style={{ width: '16px', height: '16px' }} />,
     uncheckedNode: '',

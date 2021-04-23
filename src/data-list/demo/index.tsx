@@ -2,7 +2,7 @@ import React from 'react';
 import { toast } from '../../../pant-react/es/toast';
 import { columns as cascaderColumns } from '../../cascader/demo/constant';
 import {
-  UIDataList,
+  MuiDataList,
   DataListColumn,
   toolbar,
   sortable,
@@ -257,7 +257,7 @@ export class DataListRouteComponent extends React.PureComponent {
         <div className={bem()}>
           <section>
             <h2>Basic Usage</h2>
-            <UIDataList
+            <MuiDataList
               columns={columns.slice(0, 4)}
               records={records}
               addons={[
@@ -287,7 +287,7 @@ export class DataListRouteComponent extends React.PureComponent {
           <section>
             <h2>Sticky</h2>
             <div ref={this.containerRef}>
-              <UIDataList
+              <MuiDataList
                 columns={columns}
                 records={records}
                 addons={[
@@ -364,7 +364,7 @@ export class DataListRouteComponent extends React.PureComponent {
 
           <section>
             <h2>Record Render</h2>
-            <UIDataList
+            <MuiDataList
               records={records}
               recordRender={(record) => {
                 return (

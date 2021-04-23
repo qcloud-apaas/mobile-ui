@@ -2,7 +2,7 @@ import React from 'react';
 import { DatetimePicker, DatetimePickerProps } from '../../pant-react/es/datetime-picker';
 import './index.scss';
 
-export class UIDatetimePicker extends React.PureComponent<DatetimePickerProps> {
+export class MuiDatetimePicker extends React.PureComponent<DatetimePickerProps> {
   comRef = React.createRef<DatetimePicker>();
 
   getValue(): Date {

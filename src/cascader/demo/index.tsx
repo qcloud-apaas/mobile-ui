@@ -2,7 +2,7 @@ import React from 'react';
 import { createBEM } from '../../../pant-react/es/utils/bem';
 import { NavBar } from '../../demos/scripts/components/nav-bar';
 import { Popup } from '../../../pant-react/es/popup';
-import { UICascader, ColumnItem } from '../../cascader';
+import { MuiCascader, ColumnItem } from '../../cascader';
 import { toast } from '../../../pant-react/es/toast';
 import { columns } from './constant';
 import './index.scss';
@@ -50,14 +50,14 @@ export class CascaderRouteComponent extends React.PureComponent<any, CascaderSta
           <section>
             <h2>Basic Usage</h2>
             <div className={bem('card')}>
-              <UICascader title="Basic Usage" data={columns} onChange={this.onChange} />
+              <MuiCascader title="Basic Usage" data={columns} onChange={this.onChange} />
             </div>
           </section>
 
           <section>
             <h2>Onload</h2>
             <div className={bem('card')}>
-              <UICascader title="Onload" onChange={this.onChange} onLoad={this.onLoad} />
+              <MuiCascader title="Onload" onChange={this.onChange} onLoad={this.onLoad} />
             </div>
           </section>
 
@@ -83,7 +83,7 @@ export class CascaderRouteComponent extends React.PureComponent<any, CascaderSta
                 });
               }}
             >
-              <UICascader
+              <MuiCascader
                 data={columns}
                 defaultValue={this.state.cityValue}
                 maxSelection={2}

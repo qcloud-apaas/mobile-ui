@@ -2,7 +2,7 @@ import React from 'react';
 import { createBEM } from '../../../pant-react/es/utils/bem';
 import { NavBar } from '../../demos/scripts/components/nav-bar';
 import { Popup } from '../../../pant-react/es/popup';
-import { UISearchablePicker, DataSet } from '..';
+import { MuiSearchablePicker, DataSet } from '..';
 import { toast } from '../../../pant-react/es/toast';
 import './index.scss';
 
@@ -98,14 +98,14 @@ export class SearchablePickerRouteComponent extends React.PureComponent<any, Sea
           <section>
             <h2>Basic Usage</h2>
             <div className={bem('card')}>
-              <UISearchablePicker title="Basic Usage" data={data} onChange={this.onChange} />
+              <MuiSearchablePicker title="Basic Usage" data={data} onChange={this.onChange} />
             </div>
           </section>
 
           <section>
             <h2>On Search</h2>
             <div className={bem('card')}>
-              <UISearchablePicker title="On Search" onChange={this.onChange} onSearch={this.onSearch.bind(this)} />
+              <MuiSearchablePicker title="On Search" onChange={this.onChange} onSearch={this.onSearch.bind(this)} />
             </div>
           </section>
 
@@ -131,7 +131,7 @@ export class SearchablePickerRouteComponent extends React.PureComponent<any, Sea
                 });
               }}
             >
-              <UISearchablePicker
+              <MuiSearchablePicker
                 data={data}
                 defaultValue={this.state.cityValue}
                 maxSelection={2}
@@ -176,7 +176,7 @@ export class SearchablePickerRouteComponent extends React.PureComponent<any, Sea
               }}
               style={{ height: '100%' }}
             >
-              <UISearchablePicker
+              <MuiSearchablePicker
                 title="Full Screen"
                 data={data}
                 defaultValue={this.state.cityValue}

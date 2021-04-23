@@ -2,4 +2,4 @@ import { Popup } from '../../pant-react/es/popup';
 
 export * from '../../pant-react/es/popup';
 
-export const UIPopup = Popup;
+export const MuiPopup = Popup;
