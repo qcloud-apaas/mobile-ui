@@ -32,14 +32,14 @@ import { Popup } from '@qcloud-apaas/mobile-ui/es/popup';
 ### Components
 
 - Basic Components
-  - [Popup](https://webyom.github.io/pant-react/#/components/popup)
+  - [Popup](https://qcloud-apaas.github.io/mobile-ui/#/components/popup)
 - Form Components
-  - [Cascader](https://webyom.github.io/pant-react/#/components/cascader)
-  - [DatetimePicker](https://webyom.github.io/pant-react/#/components/datetime-picker)
-  - [Field](https://webyom.github.io/pant-react/#/components/field)
-  - [SearchablePicker](https://webyom.github.io/pant-react/#/components/searchable-picker)
+  - [Cascader](https://qcloud-apaas.github.io/mobile-ui/#/components/cascader)
+  - [DatetimePicker](https://qcloud-apaas.github.io/mobile-ui/#/components/datetime-picker)
+  - [Field](https://qcloud-apaas.github.io/mobile-ui/#/components/field)
+  - [SearchablePicker](https://qcloud-apaas.github.io/mobile-ui/#/components/searchable-picker)
 - Display Components
-  - [DataList](https://webyom.github.io/pant-react/#/components/data-list)
+  - [DataList](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list)
 
 ### Preview
 
