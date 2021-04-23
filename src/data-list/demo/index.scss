@@ -2,11 +2,35 @@
 
 .demo-data-list {
   background-color: #f7f8fa;
-  padding-bottom: 800px;
+
   h2 {
     margin: 0;
     padding: 16px;
     padding-top: 20px;
     overflow: hidden;
+  }
+
+  .record-content {
+    display: flex;
+    padding: $padding-sm;
+    > img {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+    }
+    > div {
+      padding-top: 6px;
+      > h3 {
+        margin: 0;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      > div {
+        margin-top: $padding-base;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
   }
 }

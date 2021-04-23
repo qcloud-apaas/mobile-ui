@@ -3,7 +3,7 @@
 ### Import
 
 ```js
-import { DataList } from '@qcloud-apaas/mobile-ui/es/data-list';
+import { UIDataList } from '@qcloud-apaas/mobile-ui/es/data-list';
 ```
 
 ## Usage
@@ -11,7 +11,7 @@ import { DataList } from '@qcloud-apaas/mobile-ui/es/data-list';
 ### Basic Usage
 
 ```jsx
-<DataList columns={columns} records={records} />
+<UIDataList columns={columns} records={records} />
 ```
 
 ### Use Addons
@@ -29,7 +29,7 @@ import {
 ```
 
 ```jsx
-<DataList
+<UIDataList
   columns={columns}
   records={records}
   addons={[
@@ -52,7 +52,7 @@ const containerRef = useRef();
 
 ```jsx
 <div ref={containerRef}>
-  <DataList
+  <UIDataList
     columns={columns}
     records={records}
     addons={[
@@ -69,9 +69,10 @@ const containerRef = useRef();
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
-| columns * | Columns data | _[DataListColumn](https://webyom.github.io/pant-react/#/components/data-list?id=datalistcolumnltt-recordltstring-anygtgt)\<T\>[]_ | - |
 | records * | Rows data | _T[]_ | - |
 | recordKey | Key of record | _T extends Record<string, any> ? keyof T : string \| (record: T, recordIndex: number) => string_ | `index` |
+| recordRender | Custom render for record | _(record: T, recordIndex: number) => JSX.Element_ | - |
+| columns | Columns data | _[DataListColumn](https://webyom.github.io/pant-react/#/components/data-list?id=datalistcolumnltt-recordltstring-anygtgt)\<T\>[]_ | - |
 | addons | Addon list | _DataListAddon[]_ | - |
 | topTip | Tips shown on top of data list | _React.ReactNode_ | - |
 
