@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.12](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.11...v0.1.12) (2021-04-24)
+
+
+### Features
+
+* upgrade pant-react ([c689887](https://github.com/qcloud-apaas/mobile-ui/commit/c689887fa8ba6d09b1318e5c2d14105c56c6283a))
+
 ### [0.1.11](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.10...v0.1.11) (2021-04-23)
 
 
