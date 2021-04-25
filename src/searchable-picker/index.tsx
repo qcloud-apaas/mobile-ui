@@ -1,5 +1,5 @@
 import React from 'react';
-import { SearchablePicker, SearchablePickerProps } from '../../pant-react/es/searchable-picker';
+import { SearchablePicker, SearchablePickerProps, DataSet } from '../../pant-react/es/searchable-picker';
 import checkedIcon from '../assets/checked.svg';
 
 export * from '../../pant-react/es/searchable-picker';
@@ -21,6 +21,14 @@ export class MuiSearchablePicker extends React.PureComponent<SearchablePickerPro
 
   clearValue(cb: () => void): void {
     return this.comRef.current.clearValue(cb);
+  }
+
+  getDataList(): DataSet {
+    return this.comRef.current.getDataList();
+  }
+
+  cancel(): void {
+    return this.comRef.current.cancel();
   }
 
   render(): JSX.Element {
