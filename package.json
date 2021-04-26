@@ -77,7 +77,7 @@
     "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
     "html-webpack-plugin": "^5.3.1",
-    "husky": "^4.2.5",
+    "husky": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.0",
     "lint-staged": "^10.2.11",
@@ -111,6 +111,6 @@
   "dependencies": {
     "closest": "0.0.1",
     "clsx": "^1.1.0",
-    "pant-react": "^0.1.15"
+    "pant-react": "^0.1.16"
   }
 }
