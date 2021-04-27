@@ -30,9 +30,11 @@ export class MuiCascader extends React.PureComponent<CascaderProps> {
     return (
       <Cascader
         ref={this.comRef}
-        {...this.props}
         checkedIcon={<img src={checkedIconIcon} style={{ width: '16px', height: '16px' }} />}
         uncheckedIcon={maxSelection > 1 ? uncheckedIcon : null}
+        cancelButtonText="取消"
+        confirmButtonText="确定"
+        {...this.props}
       />
     );
   }
