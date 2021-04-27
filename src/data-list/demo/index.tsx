@@ -5,17 +5,19 @@ import {
   MuiDataList,
   DataListColumn,
   toolbar,
-  sortable,
+  sortable2,
   SortBy,
   filterable2,
-  selectable,
-  recordActions,
-  batchActions,
-  pageable,
+  selectable2,
+  recordActions2,
+  batchActions2,
+  pageable2,
 } from '../../data-list';
 import { createBEM } from '../../../pant-react/es/utils/bem';
 import { NavBar } from '../../demos/scripts/components/nav-bar';
 import logoImg from '../../demos/assets/logo.png';
+import plusIcon from '../../assets/plus.svg';
+import moreIcon from '../../assets/more.svg';
 import './index.scss';
 
 const bem = createBEM('demo-data-list');
@@ -220,7 +222,20 @@ export class DataListRouteComponent extends React.PureComponent {
       },
     });
 
-    const batchActionsReuse = batchActions({
+    const batchActionsReuse = batchActions2({
+      render(selectable, showActions) {
+        const moreIconImg = <img src={moreIcon} style={{ width: '16px', height: '16px' }} onClick={showActions} />;
+        const plusIconImg = <img src={plusIcon} style={{ width: '16px', height: '16px' }} />;
+        return (
+          <div className={bem('actions')}>
+            <div className={bem('action-new')}>
+              {plusIconImg}
+              <span>新建</span>
+            </div>
+            <div className={bem('action-more')}>{moreIconImg}</div>
+          </div>
+        );
+      },
       getActions() {
         return [
           {
@@ -263,7 +278,7 @@ export class DataListRouteComponent extends React.PureComponent {
               addons={[
                 toolbar(),
                 filter,
-                recordActions({
+                recordActions2({
                   actions: [
                     {
                       name: 'View',
@@ -279,7 +294,7 @@ export class DataListRouteComponent extends React.PureComponent {
                     },
                   ],
                 }),
-                pageable(),
+                pageable2(),
               ]}
             />
           </section>
@@ -292,7 +307,7 @@ export class DataListRouteComponent extends React.PureComponent {
                 records={records}
                 addons={[
                   toolbar({ sticky: true, stickyContainer: this.containerRef }),
-                  batchActions({
+                  batchActions2({
                     getActions() {
                       return [
                         {
@@ -322,7 +337,7 @@ export class DataListRouteComponent extends React.PureComponent {
                       ];
                     },
                   }),
-                  sortable({
+                  sortable2({
                     columns: [
                       { key: 'name', header: 'Name', prefer: 'asc' },
                       { key: 'mobile', header: 'Mobile' },
@@ -334,13 +349,13 @@ export class DataListRouteComponent extends React.PureComponent {
                     },
                   }),
                   filter,
-                  selectable({
+                  selectable2({
                     value: this.state.selectedValue,
                     onChange: (value) => {
                       this.setState({ selectedValue: value });
                     },
                   }),
-                  recordActions({
+                  recordActions2({
                     actions: [
                       {
                         name: 'View',
@@ -356,7 +371,7 @@ export class DataListRouteComponent extends React.PureComponent {
                       },
                     ],
                   }),
-                  pageable({ pageSize: 10, sticky: true, stickyContainer: this.containerRef }),
+                  pageable2({ pageSize: 10, sticky: true, stickyContainer: this.containerRef }),
                 ]}
               />
             </div>
@@ -383,7 +398,7 @@ export class DataListRouteComponent extends React.PureComponent {
               addons={[
                 toolbar(),
                 batchActionsReuse,
-                sortable({
+                sortable2({
                   columns: [
                     { key: 'name', header: 'Name', prefer: 'asc' },
                     { key: 'mobile', header: 'Mobile' },
@@ -395,13 +410,13 @@ export class DataListRouteComponent extends React.PureComponent {
                   },
                 }),
                 filter,
-                selectable({
+                selectable2({
                   value: this.state.selectedValue,
                   onChange: (value) => {
                     this.setState({ selectedValue: value });
                   },
                 }),
-                recordActions({
+                recordActions2({
                   actions: [
                     {
                       name: 'View',
@@ -417,7 +432,7 @@ export class DataListRouteComponent extends React.PureComponent {
                     },
                   ],
                 }),
-                pageable(),
+                pageable2(),
               ]}
             />
           </section>

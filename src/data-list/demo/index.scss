@@ -10,6 +10,35 @@
     overflow: hidden;
   }
 
+  &__actions {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__action-new {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #2473F2;
+    margin-right: 16px;
+    > img {
+      margin-right: 4px;
+    }
+  }
+
+  &__action-more {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #DCDEE6;
+    padding-left: 16px;
+    > img {
+      cursor: pointer;
+    }
+  }
+
   .record-content {
     display: flex;
     padding: $padding-sm;

@@ -1,17 +1,14 @@
 import React from 'react';
 import { Cascader, CascaderProps } from '../../pant-react/es/cascader';
 import checkedIcon from '../assets/checked.svg';
+import checkedBatchIcon from '../assets/checked-batch.svg';
+import uncheckedBatchIcon from '../assets/unchecked-batch.svg';
 
 export * from '../../pant-react/es/cascader';
 
 import './index.scss';
 
 export class MuiCascader extends React.PureComponent<CascaderProps> {
-  static defaultProps = {
-    checkedNode: <img src={checkedIcon} style={{ width: '16px', height: '16px' }} />,
-    uncheckedNode: '',
-  };
-
   comRef = React.createRef<Cascader>();
 
   getValue(): string[] | string[][] {
@@ -22,7 +19,21 @@ export class MuiCascader extends React.PureComponent<CascaderProps> {
     return this.comRef.current.clearValue(cb);
   }
 
+  onCancel(): void {
+    return this.comRef.current.onCancel();
+  }
+
   render(): JSX.Element {
-    return <Cascader ref={this.comRef} {...this.props} />;
+    const { maxSelection } = this.props;
+    const checkedIconIcon = maxSelection > 1 ? checkedBatchIcon : checkedIcon;
+    const uncheckedIcon = <img src={uncheckedBatchIcon} style={{ width: '16px', height: '16px' }} />;
+    return (
+      <Cascader
+        ref={this.comRef}
+        {...this.props}
+        checkedIcon={<img src={checkedIconIcon} style={{ width: '16px', height: '16px' }} />}
+        uncheckedIcon={maxSelection > 1 ? uncheckedIcon : null}
+      />
+    );
   }
 }

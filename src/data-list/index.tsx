@@ -9,6 +9,8 @@ import './index.scss';
 
 export class MuiDataList<T = Record<string, any>> extends React.PureComponent<DataListProps<T>> {
   render(): JSX.Element {
-    return <DataList<T> {...this.props} />;
+    const expandButton = <>展开</>;
+    const collapseButton = <>收起</>;
+    return <DataList<T> {...this.props} expandButton={expandButton} collapseButton={collapseButton} />;
   }
 }

@@ -2,5 +2,47 @@
 @import '../styles/mixins/hairline.scss';
 
 .pant-data-list {
+  &__sort__footer, &__filter__footer {
+    margin: 0 10px;
+    padding: 20px 0;
+    height: 80px;
 
+    .pant-popup-toolbar__cancel {
+      height: 40px;
+      border: 1px solid #2473F2;
+      border-radius: 4px 0 0 4px;
+      color: #2473F2;
+      width: 50%;
+    }
+
+    .pant-popup-toolbar__title {
+      display: none;
+    }
+
+    .pant-popup-toolbar__confirm {
+      height: 40px;
+      border-radius: 0 4px 4px 0;
+      color: #FFF;
+      background-color: #2473F2;
+      width: 50%;
+    }
+  }
+
+  &__filter__footer {
+    margin: 0;
+    padding: 20px 10px;
+  }
+
+  &__pagination {
+    &__prev, &__next {
+      color: #FFF;
+      background-color: #2473F2;
+      border-radius: 4px;
+      &.pant-button--disabled {
+        color: #2473F2;
+        background: rgba(220, 222, 230, .4);
+        border: 1px solid #DCDEE6;
+      }
+    }
+  }
 }

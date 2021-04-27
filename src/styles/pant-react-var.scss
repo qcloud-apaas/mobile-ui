@@ -1,7 +1,19 @@
 @import './var.scss';
 
+// Cascader
+$cascader-item-height: 44px;
+$cascader-item-padding: 0 10px;
+
 // Cell
 $cell-text-color: #333;
+
+// DataList
+$data-list-sortable-item-line-height: 44px;
+$data-list-sortable-item-font-size: 14px;
+$data-list-pageable-button-width: 88px;
+$data-list-pageable-button-height: 32px;
+$data-list-pageable-button-font-size: 14px;
+$data-list-pageable-text-font-size: 14px;
 
 // Field
 $field-error-message-color: #E54545;
@@ -11,7 +23,7 @@ $field-input-disabled-text-color: #999;
 // Picker
 $picker-toolbar-height: 48px;
 $picker-confirm-action-color: $text-link-color;
-$picker-cancel-action-color: #000;
+$picker-cancel-action-color: #666;
 $picker-action-padding: 0 20px;
 $picker-action-font-size: 16px;
 
