@@ -18,13 +18,13 @@ import { MuiDataList } from '@qcloud-apaas/mobile-ui/es/data-list';
 
 ```js
 import {
-  toolbar,
+  toolbar2,
   filterable2,
-  sortable,
-  batchActions,
-  recordActions,
-  pageable,
-  selectable
+  sortable2,
+  batchActions2,
+  recordActions2,
+  pageable2,
+  selectable2,
 } from '@qcloud-apaas/mobile-ui/es/data-list/addons';
 ```
 
@@ -33,13 +33,13 @@ import {
   columns={columns}
   records={records}
   addons={[
-    toolbar(toolbarOptions),
+    toolbar2(toolbarOptions),
     filterable2(filterableOptions),
-    sortable(sortableOptions),
-    batchActions(batchActionsOptions),
-    recordActions(recordActionsOptions),
-    pageable(pageableOptions),
-    selectable(selectableOptions),
+    sortable2(sortableOptions),
+    batchActions2(batchActionsOptions),
+    recordActions2(recordActionsOptions),
+    pageable2(pageableOptions),
+    selectable2(selectableOptions),
   ]}
 />
 ```
@@ -72,7 +72,9 @@ const containerRef = useRef();
 | records * | Rows data | _T[]_ | - |
 | recordKey | Key of record | _T extends Record<string, any> ? keyof T : string \| (record: T, recordIndex: number) => string_ | `index` |
 | recordRender | Custom render for record | _(record: T, recordIndex: number) => JSX.Element_ | - |
-| columns | Columns data | _[DataListColumn](https://webyom.github.io/pant-react/#/components/data-list?id=datalistcolumnltt-recordltstring-anygtgt)\<T\>[]_ | - |
+| expandButton | Custom expand button for showing full record data | _JSX.Element_ | - |
+| collapseButton | Custom collapse button for folding record data | _JSX.Element_ | - |
+| columns | Columns data | _[DataListColumn](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=datalistcolumnltt-recordltstring-anygtgt)\<T\>[]_ | - |
 | addons | Addon list | _DataListAddon[]_ | - |
 | topTip | Tips shown on top of data list | _React.ReactNode_ | - |
 
@@ -81,8 +83,8 @@ const containerRef = useRef();
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
 | key * | Columns key, e.g `info.name` | _string_ | - |
-| header * | Column label | _React.ReactNode \| ((column: [DataListColumn](https://webyom.github.io/pant-react/#/components/data-list?id=datalistcolumnltt-recordltstring-anygtgt)\<T\>) => React.ReactNode)_ | - |
-| render | Record value render. A default render will return the raw value find by `key` | _(options: [RowRenderOptions](https://webyom.github.io/pant-react/#/components/data-list?id=rowrenderoptionsltt-recordltstring-anygtgt)\<T\>) => React.ReactNode_ | - |
+| header * | Column label | _React.ReactNode \| ((column: [DataListColumn](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=datalistcolumnltt-recordltstring-anygtgt)\<T\>) => React.ReactNode)_ | - |
+| render | Record value render. A default render will return the raw value find by `key` | _(options: [RowRenderOptions](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=rowrenderoptionsltt-recordltstring-anygtgt)\<T\>) => React.ReactNode_ | - |
 
 #### RowRenderOptions<T = Record<string, any>>
 
@@ -90,7 +92,7 @@ const containerRef = useRef();
 | --- | --- | --- | --- |
 | record * | Record data | _T_ | - |
 | recordIndex * | Index of record | _number_ | - |
-| column * | Column data | _[DataListColumn](https://webyom.github.io/pant-react/#/components/data-list?id=datalistcolumnltt-recordltstring-anygtgt)\<T\>_ | - |
+| column * | Column data | _[DataListColumn](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=datalistcolumnltt-recordltstring-anygtgt)\<T\>_ | - |
 | columnIndex * | Index of column | _number_ | - |
 
 ### Toolbar Addon
@@ -110,10 +112,16 @@ Render toolbar on top of the data list. Must use this addon before use BatchActi
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
-| columns * | Sortable columns defination | _[SortableColumn](https://webyom.github.io/pant-react/#/components/data-list?id=sortablecolumn)[]_ | - |
-| onChange * | Handler of sorting change event | _(value: [SortBy](https://webyom.github.io/pant-react/#/components/data-list?id=sortby)[]) => void_ | - |
-| value | Sorting columns and sorting orders | _[SortBy](https://webyom.github.io/pant-react/#/components/data-list?id=sortby)[]_ | - |
+| columns * | Sortable columns defination | _[SortableColumn](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=sortablecolumn)[]_ | - |
+| onChange * | Handler of sorting change event | _(value: [SortBy](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=sortby)[]) => void_ | - |
+| value | Sorting columns and sorting orders | _[SortBy](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=sortby)[]_ | - |
 | multiple | Enable sorting by multiple columns | _boolean_ | - |
+| sortButton | Custom button for invoking sorting panel popup | _JSX.Element_ | - |
+| ascIcon | Custom icon for asc sorting item | _JSX.Element_ | - |
+| descIcon | Custom icon for desc sorting item | _JSX.Element_ | - |
+| sortIcon | Custom icon for inacive sorting item | _JSX.Element_ | - |
+| cancelButtonText | Custom text for cancel button of sorting panel | _string_ | - |
+| confirmButtonText | Custom text for confirm button of sorting panel | _string_ | - |
 
 #### SortableColumn
 
@@ -136,9 +144,13 @@ Render toolbar on top of the data list. Must use this addon before use BatchActi
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
-| columns | Filterable columns defination | _[FilterableColumn](https://webyom.github.io/pant-react/#/components/data-list?id=filterablecolumn)[]_ | - |
+| columns | Filterable columns defination | _[FilterableColumn](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=filterablecolumn)[]_ | - |
 | onChange | Handler of filtering change event | _(value: SortBy[]) => void_ | - |
 | value | Key value pair of filtering columns | _Record<string, any>_ | - |
+| filterButton | Custom button for invoking filter panel popup | _JSX.Element_ | - |
+| filterTitle | Custom title for filter panel | _string_ | - |
+| cancelButtonText | Custom text for cancel button of filter panel | _string_ | - |
+| confirmButtonText | Custom text for confirm button of filter panel | _string_ | - |
 | onPopup | Handler of filter panel popup event, return `false` to prevent popup default filter panel, then popup your custom filter panel | _(event: React.SyntheticEvent) => boolean_ | - |
 
 #### FilterableColumn
@@ -157,14 +169,14 @@ Render toolbar on top of the data list. Must use this addon before use BatchActi
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
-| getActions * | Function returns action items | _(selectable: SelectableManager\<T\>) => [BatchActionItem](https://webyom.github.io/pant-react/#/components/data-list?id=batchactionitemltt-recordltstring-anygtgt-amp-actionsheetitem)\<T\>[]_ | - |
+| getActions * | Function returns action items | _(selectable: SelectableManager\<T\>) => [BatchActionItem](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=batchactionitemltt-recordltstring-anygtgt-amp-actionsheetitem)\<T\>[]_ | - |
 | cancelText | Will show a cancel button in the popup action list if supplied | _string_ | - |
 
 #### BatchActionItem<T = Record<string, any>> & ActionSheetItem
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
-| action * | Action performing function | _(selectable: [SelectableManager](https://webyom.github.io/pant-react/#/components/data-list?id=selectablemanagerltt-recordltstring-anygtgt)\<T\>) => void_ | - |
+| action * | Action performing function | _(selectable: [SelectableManager](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=selectablemanagerltt-recordltstring-anygtgt)\<T\>) => void_ | - |
 
 #### SelectableManager<T = Record<string, any>>
 
@@ -181,8 +193,10 @@ Render toolbar on top of the data list. Must use this addon before use BatchActi
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
+| onChange * | Handler of selection change event | _(value: string[]) => void_ | - |
 | value | Key values of selected records | _string[]_ | - |
-| onChange | Handler of selection change event | _(value: string[]) => void_ | - |
+| checkedIcon | Custom icon for checked checkbox | _JSX.Element_ | - |
+| uncheckedIcon | Custom icon for unchecked checkbox | _JSX.Element_ | - |
 
 ### RecordActions Addon
 
@@ -190,7 +204,8 @@ Render toolbar on top of the data list. Must use this addon before use BatchActi
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
-| actions * | Action items | _[RecordActionItem](https://webyom.github.io/pant-react/#/components/data-list?id=recordactionitemltt-recordltstring-anygtgt-amp-actionsheetitem)\<T\>[]_ | - |
+| actions * | Action items | _[RecordActionItem](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=recordactionitemltt-recordltstring-anygtgt-amp-actionsheetitem)\<T\>[]_ | - |
+| actionIcon | Custom icon for invoking record actions popup | _JSX.Element_ | - |
 | cancelText | Will show a cancel button in the popup action list if supplied | _string_ | - |
 
 #### RecordActionItem<T = Record<string, any>> & ActionSheetItem
@@ -210,7 +225,9 @@ Render toolbar on top of the data list. Must use this addon before use BatchActi
 | pageIndex | Current page index | _number_ | - |
 | pageSize | Record amount per page | _number_ | - |
 | recordCount | Total record amount | _number_ | - |
-| onPagingChange | Handler of pageing change event | _(query: [PagingQuery](https://webyom.github.io/pant-react/#/components/data-list?id=pagingquery)) => void_ | - |
+| prevPageText | Custom text for previous page button | _string_ | - |
+| nextPageText | Custom text for next page button | _string_ | - |
+| onPagingChange | Handler of pageing change event | _(query: [PagingQuery](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=pagingquery)) => void_ | - |
 
 #### PagingQuery
 

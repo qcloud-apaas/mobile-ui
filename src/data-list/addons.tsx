@@ -12,6 +12,8 @@ import {
   SelectableOptions,
   sortable,
   SortableOptions,
+  toolbar,
+  ToolbarOptions,
 } from '../../pant-react/es/data-list/addons';
 import { MuiCascader } from '../cascader';
 import { MuiDatetimePicker, MuiDatetimeRange } from '../datetime-picker';
@@ -88,17 +90,21 @@ export function selectable2(options: SelectableOptions): DataListAddon {
 }
 
 export function sortable2(options: SortableOptions): DataListAddon {
-  const sortButton = <img src={sortIcon} style={{ width: '16px', height: '16px' }} />;
-  const sortIconIcon = <img src={sortNoOrderIcon} style={{ width: '16px', height: '16px' }} />;
-  const sortAscIconIcon = <img src={sortAscIcon} style={{ width: '16px', height: '16px' }} />;
-  const sortDescIconIcon = <img src={sortDescIcon} style={{ width: '16px', height: '16px' }} />;
+  const sortButtonImg = <img src={sortIcon} style={{ width: '16px', height: '16px' }} />;
+  const sortIconImg = <img src={sortNoOrderIcon} style={{ width: '16px', height: '16px' }} />;
+  const ascIconImg = <img src={sortAscIcon} style={{ width: '16px', height: '16px' }} />;
+  const descIconImg = <img src={sortDescIcon} style={{ width: '16px', height: '16px' }} />;
   return sortable({
     cancelButtonText: '取消',
     confirmButtonText: '确定',
-    sortButton,
-    sortIcon: sortIconIcon,
-    ascIcon: sortAscIconIcon,
-    descIcon: sortDescIconIcon,
+    sortButton: sortButtonImg,
+    sortIcon: sortIconImg,
+    ascIcon: ascIconImg,
+    descIcon: descIconImg,
     ...options,
   });
+}
+
+export function toolbar2(options: ToolbarOptions = {}): DataListAddon {
+  return toolbar({ ...options });
 }

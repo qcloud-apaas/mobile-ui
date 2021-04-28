@@ -4,7 +4,7 @@ import { columns as cascaderColumns } from '../../cascader/demo/constant';
 import {
   MuiDataList,
   DataListColumn,
-  toolbar,
+  toolbar2,
   sortable2,
   SortBy,
   filterable2,
@@ -276,7 +276,7 @@ export class DataListRouteComponent extends React.PureComponent {
               columns={columns.slice(0, 4)}
               records={records}
               addons={[
-                toolbar(),
+                toolbar2(),
                 filter,
                 recordActions2({
                   actions: [
@@ -306,7 +306,7 @@ export class DataListRouteComponent extends React.PureComponent {
                 columns={columns}
                 records={records}
                 addons={[
-                  toolbar({ sticky: true, stickyContainer: this.containerRef }),
+                  toolbar2({ sticky: true, stickyContainer: this.containerRef }),
                   batchActions2({
                     getActions() {
                       return [
@@ -396,7 +396,7 @@ export class DataListRouteComponent extends React.PureComponent {
                 );
               }}
               addons={[
-                toolbar(),
+                toolbar2(),
                 batchActionsReuse,
                 sortable2({
                   columns: [
