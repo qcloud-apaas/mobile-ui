@@ -5,6 +5,10 @@ import './index.scss';
 export class MuiDatetimeRange extends React.PureComponent<DatetimeRangeProps> {
   static readonly __FIELD_BEHAVIOR__ = 'Popup';
 
+  static defaultProps = {
+    roundPopup: false,
+  };
+
   comRef = React.createRef<DatetimeRange>();
 
   getValue(): [Date, Date] {
