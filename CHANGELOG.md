@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.22](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.21...v0.1.22) (2021-04-28)
+
+
+### Bug Fixes
+
+* **data-list:** filterable daterange-picker style ([d96b48f](https://github.com/qcloud-apaas/mobile-ui/commit/d96b48ff91040e2ca7c6b88e5e73f2ddd10a8803))
+
 ### [0.1.21](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.20...v0.1.21) (2021-04-28)
 
 
