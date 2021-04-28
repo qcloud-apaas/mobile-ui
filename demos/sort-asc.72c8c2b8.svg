@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>画板</title>
+    <desc>Created with Sketch.</desc>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+        <g id="图标/上下选择图标">
+            <g id="编组">
+                <polygon id="三角形" fill="#A2ACBD" transform="translate(8.000000, 11.500000) scale(1, -1) translate(-8.000000, -11.500000) " points="8 9 12 14 4 14"></polygon>
+                <polygon id="三角形" fill="#2473F2" points="8 2 12 7 4 7"></polygon>
+                <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
