@@ -9,6 +9,7 @@
 
   &__body {
     border-bottom: 1px solid hsl(228, 17%, 88%);
+    padding-bottom: 8px;
   }
 
   &__error-message {
@@ -24,6 +25,7 @@
     .pant-field__title {
       padding-bottom: 20px;
       padding-right: 20px;
+      padding-top: 4px;
     }
   }
 
@@ -41,6 +43,14 @@
         color: #FF584C;
         margin-left: 2px;
       }
+    }
+  }
+
+  &.pant-cell--clickable {
+    cursor: default;
+
+    &:active {
+      background-color: transparent;
     }
   }
 }
