@@ -6,10 +6,6 @@ export * from '../../pant-react/es/field';
 import './index.scss';
 
 export class MuiField<T = never> extends React.PureComponent<FieldProps<T>> {
-  static defaultProps = {
-    direction: 'column',
-  };
-
   render(): JSX.Element {
     return <Field {...this.props} />;
   }

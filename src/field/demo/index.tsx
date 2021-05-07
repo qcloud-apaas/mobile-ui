@@ -34,8 +34,22 @@ export class FieldRouteComponent extends React.PureComponent {
 
           <section>
             <h2>Disalbed</h2>
-            <MuiField<string> defaultValue="" name="c1" title="Text" placeholder="Input Readonly" readOnly></MuiField>
-            <MuiField<string> defaultValue="" name="c2" title="Text" placeholder="Input Disabled" disabled></MuiField>
+            <MuiField<string>
+              defaultValue=""
+              name="c1"
+              title="Text"
+              placeholder="Input Readonly"
+              direction="column"
+              readOnly
+            ></MuiField>
+            <MuiField<string>
+              defaultValue=""
+              name="c2"
+              title="Text"
+              placeholder="Input Disabled"
+              direction="column"
+              disabled
+            ></MuiField>
           </section>
 
           <section>
@@ -57,6 +71,7 @@ export class FieldRouteComponent extends React.PureComponent {
               title="Phone"
               placeholder="Phone"
               errorMessage="Invalid phone"
+              rightIcon="warning-o"
               required
             ></MuiField>
             <MuiField<string> defaultValue="" name="e1" title="Username" placeholder="Username" required></MuiField>

@@ -1,6 +1,36 @@
 @import '../styles/var.scss';
 
 .pant-field {
+  padding: 0;
+
+  &__value {
+    padding-bottom: 20px;
+  }
+
+  &__body {
+    border-bottom: 1px solid hsl(228, 17%, 88%);
+  }
+
+  &__error-message {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &--row {
+    display: table-row;
+    .pant-field__title, .pant-field__value {
+      display: table-cell;
+    }
+    .pant-field__title {
+      padding-bottom: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &:not(:last-child)::after {
+    display: none;
+  }
+
   &.pant-cell--required {
     &::before {
       display: none;
