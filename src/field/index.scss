@@ -29,6 +29,15 @@
     }
   }
 
+  &--readonly {
+    .pant-field__body {
+      border-bottom: none;
+    }
+    .pant-field__value {
+      padding-top: 4px;
+    }
+  }
+
   &:not(:last-child)::after {
     display: none;
   }
