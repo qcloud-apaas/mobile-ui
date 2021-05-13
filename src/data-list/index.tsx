@@ -1,13 +1,13 @@
 import React from 'react';
 import { DataList, DataListProps } from '../../pant-react/es/data-list';
-import arrowUpIcon from '../assets/arrow-up.svg';
-import arrowDownIcon from '../assets/arrow-down.svg';
+import './index.scss';
 
 export * from '../../pant-react/es/data-list';
 
 export * from './addons';
 
-import './index.scss';
+const arrowUpIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/arrow-up.svg';
+const arrowDownIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/arrow-down.svg';
 
 export class MuiDataList<T = Record<string, any>> extends React.PureComponent<DataListProps<T>> {
   render(): JSX.Element {

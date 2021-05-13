@@ -1,12 +1,12 @@
 import React from 'react';
 import { Cascader, CascaderProps } from '../../pant-react/es/cascader';
-import checkedIcon from '../assets/checked.svg';
-import checkedBatchIcon from '../assets/checked-batch.svg';
-import uncheckedBatchIcon from '../assets/unchecked-batch.svg';
+import './index.scss';
 
 export * from '../../pant-react/es/cascader';
 
-import './index.scss';
+const checkedIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/checked.svg';
+const checkedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/checked-batch.svg';
+const uncheckedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/unchecked-batch.svg';
 
 export class MuiCascader extends React.PureComponent<CascaderProps> {
   comRef = React.createRef<Cascader>();

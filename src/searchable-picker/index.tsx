@@ -1,12 +1,12 @@
 import React from 'react';
 import { SearchablePicker, SearchablePickerProps, DataSet } from '../../pant-react/es/searchable-picker';
-import checkedIcon from '../assets/checked.svg';
-import checkedBatchIcon from '../assets/checked-batch.svg';
-import uncheckedBatchIcon from '../assets/unchecked-batch.svg';
+import './index.scss';
 
 export * from '../../pant-react/es/searchable-picker';
 
-import './index.scss';
+const checkedIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/checked.svg';
+const checkedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/checked-batch.svg';
+const uncheckedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/unchecked-batch.svg';
 
 export class MuiSearchablePicker extends React.PureComponent<SearchablePickerProps> {
   static defaultProps = {
@@ -42,6 +42,7 @@ export class MuiSearchablePicker extends React.PureComponent<SearchablePickerPro
         uncheckedIcon={maxSelection > 1 ? uncheckedIcon : null}
         cancelButtonText="取消"
         confirmButtonText="确定"
+        noDataMsg="暂无数据"
         {...this.props}
       />
     );

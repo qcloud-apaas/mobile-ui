@@ -18,14 +18,6 @@ import {
 import { MuiCascader } from '../cascader';
 import { MuiDatetimePicker, MuiDatetimeRange } from '../datetime-picker';
 import { MuiSearchablePicker } from '../searchable-picker';
-import checkedBatchIcon from '../assets/checked-batch.svg';
-import uncheckedBatchIcon from '../assets/unchecked-batch.svg';
-import sortIcon from '../assets/sort.svg';
-import sortNoOrderIcon from '../assets/sort-no-order.svg';
-import sortAscIcon from '../assets/sort-asc.svg';
-import sortDescIcon from '../assets/sort-desc.svg';
-import filterIcon from '../assets/filter.svg';
-import moreIcon from '../assets/more.svg';
 
 export * from '../../pant-react/es/data-list/addons/batch-actions';
 
@@ -40,6 +32,15 @@ export * from '../../pant-react/es/data-list/addons/selectable';
 export * from '../../pant-react/es/data-list/addons/sortable';
 
 export * from '../../pant-react/es/data-list/addons/toolbar';
+
+const checkedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/checked-batch.svg';
+const uncheckedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/unchecked-batch.svg';
+const sortIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/sort.svg';
+const sortNoOrderIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/sort-no-order.svg';
+const sortAscIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/sort-asc.svg';
+const sortDescIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/sort-desc.svg';
+const filterIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/filter.svg';
+const moreIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/more.svg';
 
 export function pageable2(options: PageableOptions = {}): DataListAddon {
   return pageable({ prevPageText: '上一页', nextPageText: '下一页', ...options });

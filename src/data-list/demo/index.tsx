@@ -16,9 +16,10 @@ import {
 import { createBEM } from '../../../pant-react/es/utils/bem';
 import { NavBar } from '../../demos/scripts/components/nav-bar';
 import logoImg from '../../demos/assets/logo.png';
-import plusIcon from '../../assets/plus.svg';
-import moreIcon from '../../assets/more.svg';
 import './index.scss';
+
+const plusIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/plus.svg';
+const moreIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/more.svg';
 
 const bem = createBEM('demo-data-list');
 
