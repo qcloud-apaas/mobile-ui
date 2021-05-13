@@ -351,6 +351,7 @@ export class DataListRouteComponent extends React.PureComponent {
                   }),
                   filter,
                   selectable2({
+                    maxSelection: 2,
                     value: this.state.selectedValue,
                     onChange: (value) => {
                       this.setState({ selectedValue: value });

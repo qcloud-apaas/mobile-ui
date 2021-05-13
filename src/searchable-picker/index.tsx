@@ -43,6 +43,7 @@ export class MuiSearchablePicker extends React.PureComponent<SearchablePickerPro
         cancelButtonText="取消"
         confirmButtonText="确定"
         noDataMsg="暂无数据"
+        maxSelectionMsg="最多选择{0}个"
         {...this.props}
       />
     );

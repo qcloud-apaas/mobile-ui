@@ -23,6 +23,8 @@ export class MuiDataList<T = Record<string, any>> extends React.PureComponent<Da
         <img src={arrowUpIcon} style={{ width: '16px', height: '16px' }} />
       </>
     );
-    return <DataList<T> {...this.props} expandButton={expandButton} collapseButton={collapseButton} />;
+    return (
+      <DataList<T> expandButton={expandButton} collapseButton={collapseButton} noDataMsg="暂无数据" {...this.props} />
+    );
   }
 }
