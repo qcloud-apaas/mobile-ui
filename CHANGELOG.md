@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.30](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.29...v0.1.30) (2021-05-13)
+
+
+### Features
+
+* **data-list:** no data msg ([e42a178](https://github.com/qcloud-apaas/mobile-ui/commit/e42a178335a5e5fb66d7eb7368603eb1c3cf00d0))
+
 ### [0.1.29](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.28...v0.1.29) (2021-05-13)
 
 ### [0.1.28](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.27...v0.1.28) (2021-05-10)
