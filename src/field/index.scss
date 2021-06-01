@@ -33,6 +33,12 @@
     }
   }
 
+  &--column {
+    .pant-field__title {
+      margin-bottom: 4px;
+    }
+  }
+
   &--readonly {
     .pant-field__body {
       border-bottom: none;
