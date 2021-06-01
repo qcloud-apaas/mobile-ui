@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.33](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.32...v0.1.33) (2021-06-01)
+
+
+### Bug Fixes
+
+* column field label margin ([391d34c](https://github.com/qcloud-apaas/mobile-ui/commit/391d34cf0f9323216beda5c9c6fb048ef17d65a2))
+
 ### [0.1.32](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.31...v0.1.32) (2021-06-01)
 
 
