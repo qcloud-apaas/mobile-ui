@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.35](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.34...v0.1.35) (2021-06-03)
+
+
+### Bug Fixes
+
+* remove form field table layout ([e350dc0](https://github.com/qcloud-apaas/mobile-ui/commit/e350dc023a25c2248218c2c7fd1fbfa8a6a9b9a5))
+
 ### [0.1.34](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.33...v0.1.34) (2021-06-01)
 
 
