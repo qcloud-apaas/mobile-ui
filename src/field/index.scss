@@ -22,10 +22,6 @@
   }
 
   &--row {
-    display: table-row;
-    .pant-field__title, .pant-field__value {
-      display: table-cell;
-    }
     .pant-field__title {
       padding-bottom: 20px;
       padding-right: 20px;
