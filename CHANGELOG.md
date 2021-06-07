@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.37](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.36...v0.1.37) (2021-06-07)
+
+
+### Bug Fixes
+
+* **datetime-picker:** yearmonth default value ([e0f7d08](https://github.com/qcloud-apaas/mobile-ui/commit/e0f7d086dfb34631bbdbdf8d11f8880b18a78af4))
+
 ### [0.1.36](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.35...v0.1.36) (2021-06-04)
 
 
