@@ -72,6 +72,7 @@ const containerRef = useRef();
 | records * | Rows data | _T[]_ | - |
 | recordKey | Key of record | _T extends Record<string, any> ? keyof T : string \| (record: T, recordIndex: number) => string_ | `index` |
 | recordRender | Custom render for record | _(record: T, recordIndex: number) => JSX.Element_ | - |
+| listRender | Custom render for whole list | _(records: T[]) => JSX.Element_ | - |
 | expandButton | Custom expand button for showing full record data | _JSX.Element_ | - |
 | collapseButton | Custom collapse button for folding record data | _JSX.Element_ | - |
 | columns | Columns data | _[DataListColumn](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=datalistcolumnltt-recordltstring-anygtgt)\<T\>[]_ | - |
