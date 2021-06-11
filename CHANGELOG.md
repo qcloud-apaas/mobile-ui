@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.39](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.38...v0.1.39) (2021-06-11)
+
+
+### Bug Fixes
+
+* **searchable-picker:** virtualized list update ([f5f56e5](https://github.com/qcloud-apaas/mobile-ui/commit/f5f56e5cdc592745a0e0d7a45b8fdc654abb6bc3))
+
 ### [0.1.38](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.37...v0.1.38) (2021-06-10)
 
 
