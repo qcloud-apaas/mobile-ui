@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.40](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.39...v0.1.40) (2021-06-13)
+
+
+### Bug Fixes
+
+* **data-list:** field width ([11728c4](https://github.com/qcloud-apaas/mobile-ui/commit/11728c421abfde8dc19f63973a1b2ac4166cda7f))
+
 ### [0.1.39](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.38...v0.1.39) (2021-06-11)
 
 
