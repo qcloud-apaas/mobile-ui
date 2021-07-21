@@ -4,7 +4,7 @@
   padding: 0;
 
   &__value {
-    padding-bottom: 20px;
+    padding-bottom: 12px;
   }
 
   &__body {
@@ -16,14 +16,9 @@
     font-size: 14px;
   }
 
-  &__error-message {
-    position: absolute;
-    bottom: 0;
-  }
-
   &--row {
     .pant-field__title {
-      padding-bottom: 20px;
+      padding-bottom: 12px;
       padding-right: 20px;
       padding-top: 4px;
     }
@@ -55,7 +50,7 @@
     .pant-field__title {
       &::after {
         content: '*';
-        color: #FF584C;
+        color: #E54545;
         margin-left: 2px;
       }
     }
@@ -66,6 +61,12 @@
 
     &:active {
       background-color: transparent;
+    }
+  }
+
+  &--error {
+    .pant-field__body {
+      border-bottom: 1px solid #E54545;
     }
   }
 }
