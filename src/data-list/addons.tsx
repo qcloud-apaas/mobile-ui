@@ -43,7 +43,7 @@ const filterIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/filter.
 const moreIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/more.svg';
 
 export function pageable2(options: PageableOptions = {}): DataListAddon {
-  return pageable({ prevPageText: '上一页', nextPageText: '下一页', ...options });
+  return pageable({ ...options });
 }
 
 export function filterable2(options: FilterableOptions): DataListAddon {
@@ -66,9 +66,6 @@ export function filterable2(options: FilterableOptions): DataListAddon {
   });
   const filterButton = <img src={filterIcon} style={{ width: '16px', height: '16px' }} />;
   return filterable({
-    filterTitle: '筛选',
-    cancelButtonText: '取消',
-    confirmButtonText: '确定',
     filterButton,
     ...options,
     columns,
