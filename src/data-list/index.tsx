@@ -1,5 +1,6 @@
 import React from 'react';
 import { DataList, DataListProps } from '../../pant-react/es/data-list';
+import { i18n } from '../../pant-react/es/locale';
 import './index.scss';
 
 export * from '../../pant-react/es/data-list';
@@ -13,18 +14,16 @@ export class MuiDataList<T = Record<string, any>> extends React.PureComponent<Da
   render(): JSX.Element {
     const expandButton = (
       <>
-        展开
+        {i18n().expand}
         <img src={arrowDownIcon} style={{ width: '16px', height: '16px' }} />
       </>
     );
     const collapseButton = (
       <>
-        收起
+        {i18n().collapse}
         <img src={arrowUpIcon} style={{ width: '16px', height: '16px' }} />
       </>
     );
-    return (
-      <DataList<T> expandButton={expandButton} collapseButton={collapseButton} noDataMsg="暂无数据" {...this.props} />
-    );
+    return <DataList<T> expandButton={expandButton} collapseButton={collapseButton} {...this.props} />;
   }
 }

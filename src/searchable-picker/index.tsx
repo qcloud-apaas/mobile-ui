@@ -40,10 +40,6 @@ export class MuiSearchablePicker extends React.PureComponent<SearchablePickerPro
         ref={this.comRef}
         checkedIcon={<img src={checkedIconIcon} style={{ width: '16px', height: '16px' }} />}
         uncheckedIcon={maxSelection > 1 ? uncheckedIcon : null}
-        cancelButtonText="取消"
-        confirmButtonText="确定"
-        noDataMsg="暂无数据"
-        maxSelectionMsg="最多选择{0}个"
         {...this.props}
       />
     );

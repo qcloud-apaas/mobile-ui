@@ -14,6 +14,6 @@ export class MuiDatetimePicker extends React.PureComponent<DatetimePickerProps> 
   }
 
   render(): JSX.Element {
-    return <DatetimePicker ref={this.comRef} cancelButtonText="取消" confirmButtonText="确定" {...this.props} />;
+    return <DatetimePicker ref={this.comRef} {...this.props} />;
   }
 }

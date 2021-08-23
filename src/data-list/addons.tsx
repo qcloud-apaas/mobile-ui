@@ -87,7 +87,7 @@ export function recordActions2(options: RecordActionsOptions): DataListAddon {
 export function selectable2(options: SelectableOptions): DataListAddon {
   const checkedIcon = <img src={checkedBatchIcon} style={{ width: '16px', height: '16px' }} />;
   const uncheckedIcon = <img src={uncheckedBatchIcon} style={{ width: '16px', height: '16px' }} />;
-  return selectable({ checkedIcon, uncheckedIcon, maxSelectionMsg: '最多选择{0}条记录', ...options });
+  return selectable({ checkedIcon, uncheckedIcon, ...options });
 }
 
 export function sortable2(options: SortableOptions): DataListAddon {
@@ -96,8 +96,6 @@ export function sortable2(options: SortableOptions): DataListAddon {
   const ascIconImg = <img src={sortAscIcon} style={{ width: '16px', height: '16px' }} />;
   const descIconImg = <img src={sortDescIcon} style={{ width: '16px', height: '16px' }} />;
   return sortable({
-    cancelButtonText: '取消',
-    confirmButtonText: '确定',
     sortButton: sortButtonImg,
     sortIcon: sortIconImg,
     ascIcon: ascIconImg,

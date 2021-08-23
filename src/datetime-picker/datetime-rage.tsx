@@ -20,15 +20,6 @@ export class MuiDatetimeRange extends React.PureComponent<DatetimeRangeProps> {
   }
 
   render(): JSX.Element {
-    return (
-      <DatetimeRange
-        ref={this.comRef}
-        cancelButtonText="取消"
-        confirmButtonText="确定"
-        titleStart="选择开始时间"
-        titleEnd="选择结束时间"
-        {...this.props}
-      />
-    );
+    return <DatetimeRange ref={this.comRef} {...this.props} />;
   }
 }
