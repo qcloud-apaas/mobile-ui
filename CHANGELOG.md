@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.47](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.46...v0.1.47) (2021-11-08)
+
+
+### Features
+
+* **datalist:** single selection icon ([58130e5](https://github.com/qcloud-apaas/mobile-ui/commit/58130e536fc94713d49e1da2d6c2c51bc55e1f00))
+
 ### [0.1.46](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.45...v0.1.46) (2021-11-04)
 
 
