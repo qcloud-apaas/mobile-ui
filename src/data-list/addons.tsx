@@ -35,6 +35,8 @@ export * from '../../pant-react/es/data-list/addons/toolbar';
 
 const checkedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/checked-batch.svg';
 const uncheckedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/unchecked-batch.svg';
+const singleCheckedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/checked-radio.svg';
+const singleUncheckedBatchIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/unchecked-radio.svg';
 const sortIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/sort.svg';
 const sortNoOrderIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/sort-no-order.svg';
 const sortAscIcon = 'https://apaas.imgcache.qq.com/assets/apaas/component/sort-asc.svg';
@@ -84,7 +86,9 @@ export function recordActions2(options: RecordActionsOptions): DataListAddon {
 export function selectable2(options: SelectableOptions): DataListAddon {
   const checkedIcon = <img src={checkedBatchIcon} style={{ width: '16px', height: '16px' }} />;
   const uncheckedIcon = <img src={uncheckedBatchIcon} style={{ width: '16px', height: '16px' }} />;
-  return selectable({ checkedIcon, uncheckedIcon, ...options });
+  const singleCheckedIcon = <img src={singleCheckedBatchIcon} style={{ width: '16px', height: '16px' }} />;
+  const singleUncheckedIcon = <img src={singleUncheckedBatchIcon} style={{ width: '16px', height: '16px' }} />;
+  return selectable({ checkedIcon, uncheckedIcon, singleCheckedIcon, singleUncheckedIcon, ...options });
 }
 
 export function sortable2(options: SortableOptions): DataListAddon {
