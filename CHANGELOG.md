@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.48](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.47...v0.1.48) (2021-11-23)
+
+
+### Features
+
+* **data-list:** pass record index for record action ([7a86cff](https://github.com/qcloud-apaas/mobile-ui/commit/7a86cff3b3503742c3830c64a41bbafce0c411a1))
+
 ### [0.1.47](https://github.com/qcloud-apaas/mobile-ui/compare/v0.1.46...v0.1.47) (2021-11-08)
 
 
