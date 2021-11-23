@@ -213,7 +213,7 @@ Render toolbar on top of the data list. Must use this addon before use BatchActi
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
-| action * | Action performing function | _(record: T) => void_ | - |
+| action * | Action performing function | _(record: T, recordIndex: number) => void_ | - |
 
 ### Pageable Addon
 
