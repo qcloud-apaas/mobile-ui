@@ -1,6 +1,6 @@
 {
   "name": "@qcloud-apaas/mobile-ui",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tencent Cloud aPaaS Mobile UI Components",
   "keywords": [
     "react",
