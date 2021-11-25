@@ -205,7 +205,7 @@ Render toolbar on top of the data list. Must use this addon before use BatchActi
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
-| actions * | Action items | _[RecordActionItem](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=recordactionitemltt-recordltstring-anygtgt-amp-actionsheetitem)\<T\>[]_ | - |
+| getActions * | return action items | _(record: Record\<string, any\>, recordIndex: number) => [RecordActionItem](https://qcloud-apaas.github.io/mobile-ui/#/components/data-list?id=recordactionitemltt-recordltstring-anygtgt-amp-actionsheetitem)\<T\>[]_ | - |
 | actionIcon | Custom icon for invoking record actions popup | _JSX.Element_ | - |
 | cancelText | Will show a cancel button in the popup action list if supplied | _string_ | - |
 
